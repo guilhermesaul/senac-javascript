@@ -1,0 +1,67 @@
+<meta charset="UTF-8" />
+
+<h1>Meu primeiro teste!</h1>
+
+<p>
+  Já estou programando? Isso é um sistema já? <br />
+  Acompanhe sempre a plataforma do Senac acessando:
+</p>
+
+<a href="https://www.pr.senac.br/">Clicando Aqui</a>!
+
+<!-- Todo código JavaScript deve estar inserido entre as tags <script> e </script> -->
+<script>
+  alert("Isso sim é um programa");
+</script>
+
+<script>
+  var nomeDoAluno;
+  nomeDoAluno = "Fulano de Tal";
+  var idadeDoAluno = 30;
+  idadeDoAluno = 30 + 20;
+  console.log("O Aluno " + nomeDoAluno + " possui " + idadeDoAluno + " anos.");
+  // a resposta no console será: O Aluno Fulano de Tal possui 50 anos
+</script>
+
+<script>
+  var frutas = ["Maçã", "Banana", "Melão", "Mamão", "Uva"];
+  var saladaDeFrutas = frutas.join("+");
+  console.log(saladaDeFrutas);
+  // Maçã+Banana+Melão+Mamão+Uva
+</script>
+
+<script>
+  var frutas = ["Maçã", "Banana", "Melão", "Mamão", "Uva"];
+  var saladaDeFrutas = frutas.join();
+  console.log(saladaDeFrutas);
+  // Maçã,Banana,Melão,Mamão,Uva
+  frutas.pop();
+  console.log(frutas.join());
+  // Maçã,Banana,Melão,Mamão
+</script>
+
+<script>
+  var frutas = ["Maçã", "Banana", "Melão", "Mamão", "Uva"];
+  var numeroElementos = frutas.push("Carambola");
+  console.log(numeroElementos);
+  //6
+  var saladaDeFrutas = frutas.join();
+  console.log(saladaDeFrutas);
+  // Maçã,Banana,Melão,Mamão,Uva,Carambola
+</script>
+
+<script>
+  var alpha = ["a", "b", "c"];
+  var numeric = [1, 2, 3];
+
+  var alphaNumeric = alpha.concat(numeric); // cria um array ["a", "b", "c", 1, 2, 3]; alpha e numeric não saõ modificados
+</script>
+
+<script>
+  var num1 = [1, 2, 3];
+  var num2 = [4, 5, 6];
+  var num3 = [7, 8, 9];
+
+  // este cria um array [1, 2, 3, 4, 5, 6, 7, 8, 9]; num1, num2, num3 ficam como estavam
+  var nums = num1.concat(num2, num3);
+</script>
